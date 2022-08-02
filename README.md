@@ -1,92 +1,139 @@
-# Radio Browser
+# Radio Browser Challenge
 
+## Introdução
 
+Este é um desafio para testar seus conhecimentos de Front-end;
 
-## Getting started
+O objetivo é avaliar a sua forma de estruturação e autonomia em decisões para construir algo escalável utilizando o Framework sugerido na vaga aplicada.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Instruções iniciais obrigatórias
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- Utilizar o seu github pessoal para publicar o desafio. Confirme que a visibilidade do projeto é pública (não esqueça de colocar no readme a referência a este challenge);
 
-## Add your files
+## Case
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+As pessoas estão com saudades de voltar nos tempos antigos e uma das melhores maneiras de solucionar esse problema é trazer a rádio de volta.
+Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API de rádio para que os usuários possam desfrutar e relembrar desse tempo. O seu objetivo nesse projeto, é trabalhar no desenvolvimento do Front end que consumirá a API de Radio seguindo os requisitos propostos neste desafio.
 
+## Recursos
+
+1. Estudar a documentação da REST API: https://de1.api.radio-browser.info/json/stations/search?limit=10
+2. Utilizar Frameworks CSS, recomendamos alguns como:
+
+    - Tailwind CSS: https://tailwindcss.com/
+    - Material UI: https://material-ui.com/
+    - Angular Material: https://material.angular.io/
+    - Bootstrap: https://getbootstrap.com/
+    - Bulma: https://bulma.io/
+    - Outro de sua preferência
+
+## Tela para Desktop
+
+![Desktop](assets/desktop.png)
+
+## Tela para Mobile
+
+![Mobile](assets/mobile.png)
+
+## API
+
+Para obter os dados, utilizaremos a API do Random User:
+
+- https://de1.api.radio-browser.info/json/stations/search?limit=10
+
+Exemplo da resposta:
+
+```json
+[
+    {
+    "changeuuid": "f6a6d140-c065-4e3b-9bda-3fb752148ae7",
+    "stationuuid": "a25700ef-e952-4b73-8b4e-b92d938cb020",
+    "serveruuid": "46ce76c5-203b-43e3-b709-5748219f9fcd",
+    "name": "\tNewstalk ZB Auckland",
+    "url": "https://ais-nzme.streamguys1.com/nz_002_aac",
+    "url_resolved": "https://ais-nzme.streamguys1.com/nz_002_aac",
+    "homepage": "https://www.newstalkzb.co.nz/",
+    "favicon": "https://www.newstalkzb.co.nz/content/news/images/interface/icons/newstalkzb/apple-touch-icon.png",
+    "tags": "",
+    "country": "New Zealand",
+    "countrycode": "NZ",
+    "iso_3166_2": null,
+    "state": "BOP",
+    "language": "",
+    "languagecodes": "",
+    "votes": 41,
+    "lastchangetime": "2022-05-11 08:42:03",
+    "lastchangetime_iso8601": "2022-05-11T08:42:03Z",
+    "codec": "AAC+",
+    "bitrate": 65,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2022-08-01 16:52:00",
+    "lastchecktime_iso8601": "2022-08-01T16:52:00Z",
+    "lastcheckoktime": "2022-08-01 16:52:00",
+    "lastcheckoktime_iso8601": "2022-08-01T16:52:00Z",
+    "lastlocalchecktime": "2022-08-01 12:24:26",
+    "lastlocalchecktime_iso8601": "2022-08-01T12:24:26Z",
+    "clicktimestamp": "2022-08-02 08:26:09",
+    "clicktimestamp_iso8601": "2022-08-02T08:26:09Z",
+    "clickcount": 51,
+    "clicktrend": 2,
+    "ssl_error": 0,
+    "geo_lat": null,
+    "geo_long": null,
+    "has_extended_info": false
+  },
+]
 ```
-cd existing_repo
-git remote add origin https://lab.coodesh.com/a.carvalho/radio-browser.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+## Obrigatórios
 
-- [ ] [Set up project integrations](https://lab.coodesh.com/a.carvalho/radio-browser/-/settings/integrations)
+**Obrigatório 1 -** Você deverá atender aos seguintes casos de uso:
 
-## Collaborate with your team
+- Como usuário, posso adicionar uma rádio na minha lista;
+- Como usuário, ver minha lista de rádios adicionadas;
+- Como usuário, posso remover uma rádio da minha lista;
+- Como usuário posso editar informações da rádio escolhida;
+- Como usuário, posso ouvir a rádio selecionado ao clicar o play;
+- Como usuário, posso parar de ouvir a rádio selecionada ao clicar no stop;
+- Como usuário, posso pesquisar a rádio que tenho interesse.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+**Obrigatório 2 -** Filtrar por nome da rádio, país ou idioma com paginação mostrando 10 rádios por vez.
 
-## Test and Deploy
+**Obrigatório 3 -** Salvar as informações para quando o usuário retornar na aplicação deve ter as rádios salvas.
 
-Use the built-in continuous integration in GitLab.
+**Obrigatório 4 -** Seguir a base do [wireframe](https://www.figma.com/file/TDuhDdbwdzIVQjNV3GF9Qi/Radio?node-id=0%3A1) (estilização ao seu critério)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+## Extras
 
-***
+Além do desafio proposto temos alguns diferenciais:
 
-# Editing this README
+**Diferencial 1 -** Escrever Unit Tests ou E2E Test. Escolher a melhor abordagem e biblioteca;
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+**Diferencial 2 -** Configurar Docker no Projeto para facilitar o Deploy da equipe de DevOps;
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+**Diferencial 3 -** Publique o projeto em alguma plataforma, como por exemplo a [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/) ou outra de sua preferência.
 
-## Name
-Choose a self-explaining name for your project.
+## Readme do Repositório
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+- Deve conter o título do projeto
+- Uma descrição de uma frase
+- Como instalar e usar o projeto (instruções)
+- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Finalização
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Avisar sobre a finalização e enviar para correção em: [https://coodesh.com/review-challenge](https://coodesh.com/review-challenge)
+Após essa etapa será marcado a apresentação/correção do projeto.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## Instruções para a Apresentação:
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+1. Será necessário compartilhar a tela durante a vídeo chamada;
+2. Deixe todos os projetos de solução previamente abertos em seu computador antes de iniciar a chamada;
+3. Deixe os ambientes configurados e prontos para rodar;
+4. Prepara-se pois você será questionado sobre cada etapa e decisão do Challenge;
+5. Prepare uma lista de perguntas, dúvidas, sugestões de melhorias e feedbacks (caso tenha).
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## Suporte
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Use a [nossa comunidade](https://coodesh.com/desenvolvedores#community) para tirar dúvidas e descontrair ou envie um e-mail para contato@coodesh.com.
