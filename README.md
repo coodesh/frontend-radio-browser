@@ -37,7 +37,7 @@ Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API 
 
 ## API
 
-Para obter os dados, utilizaremos a API do Random User:
+Para obter os dados, utilizaremos a API do Radio Browser:
 
 - https://de1.api.radio-browser.info/json/stations/search?limit=10
 
@@ -136,4 +136,4 @@ Após essa etapa será marcado a apresentação/correção do projeto.
 
 ## Suporte
 
-Use a [nossa comunidade](https://coodesh.com/desenvolvedores#community) para tirar dúvidas e descontrair ou envie um e-mail para contato@coodesh.com.
+Use a [nossa comunidade](https://coodesh.com/desenvolvedores#community) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma.
