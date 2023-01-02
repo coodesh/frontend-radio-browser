@@ -16,7 +16,7 @@ O objetivo é avaliar a sua forma de estruturação e autonomia em decisões par
 ## Case
 
 As pessoas estão com saudades de voltar nos tempos antigos e uma das melhores maneiras de solucionar esse problema é trazer a rádio de volta.
-Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API de rádio para que os usuários possam desfrutar e relembrar desse tempo. O seu objetivo nesse projeto, é trabalhar no desenvolvimento do Front end que consumirá a API de Radio seguindo os requisitos propostos neste desafio.
+Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API de rádio para que os usuários possam desfrutar e relembrar desse tempo, seguindo os requisitos propostos neste desafio.
 
 ## Recursos
 
