@@ -41,9 +41,9 @@ Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API 
 
 ## API
 
-Para obter os dados, utilizaremos a API do Radio Browser:
+Para obter os dados, utilizaremos a API do Radio Browser. Selecione um dos domínios desta lista https://all.api.radio-browser.info/#Server_mirrors
 
-- https://de1.api.radio-browser.info/json/stations/search?limit=10
+- https://nl1.api.radio-browser.info/json/stations/search?limit=10
 
 Exemplo da resposta:
 
