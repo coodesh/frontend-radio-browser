@@ -21,7 +21,7 @@ Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API 
 
 ## Recursos
 
-1. Estudar a documentação da REST API: https://de1.api.radio-browser.info/json/stations/search?limit=10
+1. Estudar a documentação da REST API: https://nl1.api.radio-browser.info/json/stations/search?limit=10
 2. Utilizar Frameworks CSS, recomendamos alguns como:
 
     - Tailwind CSS: https://tailwindcss.com/
@@ -41,7 +41,7 @@ Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API 
 
 ## API
 
-Para obter os dados, utilizaremos a API do Radio Browser. Selecione um dos domínios desta lista https://all.api.radio-browser.info/#Server_mirrors
+Para obter os dados, utilizaremos a API do Radio Browser. Selecione um dos domínios desta lista https://all.api.radio-browser.info/#Server_mirrors . Os exemplos abaixo usarão a API NL1
 
 - https://nl1.api.radio-browser.info/json/stations/search?limit=10
 
@@ -132,10 +132,10 @@ Além do desafio proposto temos alguns diferenciais:
 ## Finalização e Instruções para a Apresentação
 
 1. Adicione o link do repositório com a sua solução no teste
-2. Adicione o link da apresentação do seu projeto no README.md.
-3. Verifique se o Readme está bom e faça o commit final em seu repositório;
-4. Envie e aguarde as instruções para seguir. Sucesso e boa sorte. =)
+2. Verifique se o Readme está bom e faça o commit final em seu repositório;
+3. Envie e aguarde as instruções para seguir. Caso o teste tenha apresentação de vídeo, dentro da tela de entrega será possível gravar após adicionar o link do repositório. Sucesso e boa sorte. =)
+
 
 ## Suporte
 
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
+Para tirar dúvidas sobre o processo envie uma mensagem diretamente a um especialista no chat da plataforma. 
